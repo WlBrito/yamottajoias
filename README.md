@@ -108,4 +108,4 @@ Este projeto foi construído do zero com foco em entender cada camada da aplica�
 
 ---
 
-Desenvolvido por **Whendell** · [LinkedIn](https://linkedin.com)
+Desenvolvido por **Whendell** · [LinkedIn](https://www.linkedin.com/in/wlbrito/)
