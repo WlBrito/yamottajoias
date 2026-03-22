@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Backend/">
+    <Project Path="LojaPratas.Api/LojaPratas.Api.csproj" />
+  </Folder>
+  <Folder Name="/Frontend/" />
+  <Folder Name="/Frontend/yamotta-joias/" />
+</Solution>

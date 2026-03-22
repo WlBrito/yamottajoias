@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 15 16% 19%;
+
+    --card: 0 100% 99%;
+    --card-foreground: 15 16% 19%;
+
+    --popover: 0 100% 99%;
+    --popover-foreground: 15 16% 19%;
+
+    --primary: 0 27% 71%;
+    --primary-foreground: 0 100% 99%;
+
+    --secondary: 0 47% 95%;
+    --secondary-foreground: 15 16% 19%;
+
+    --muted: 0 47% 95%;
+    --muted-foreground: 0 16% 55%;
+
+    --accent: 0 34% 82%;
+    --accent-foreground: 15 16% 19%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 100% 99%;
+
+    --border: 0 34% 88%;
+    --input: 0 34% 88%;
+    --ring: 0 27% 71%;
+
+    --radius: 0.25rem;
+
+    --rose: 0 27% 71%;
+    --rose-light: 0 47% 95%;
+    --rose-medium: 0 34% 82%;
+
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Jost', system-ui, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--secondary));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.4);
+  border-radius: 3px;
+}
+
+/* Animations */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out both;
+}

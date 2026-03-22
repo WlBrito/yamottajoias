@@ -1,0 +1,19 @@
+@LojaPratas.Api_HostAddress = http://localhost:5259
+
+GET {{LojaPratas.Api_HostAddress}}/api/Produtos
+Accept: application/json
+
+###
+
+POST {{LojaPratas.Api_HostAddress}}/api/Produtos
+Content-Type: application/json
+
+{
+    "nome": "Anel Solitário",
+    "descricao": "Anel em prata 925",
+    "preco": 129.90,
+    "quantidade": 10,
+    "imagemUrl": "https://exemplo.com/anel.jpg"
+}
+
+###
